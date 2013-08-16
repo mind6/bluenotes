@@ -10,3 +10,6 @@ node_modules
 
 # Emacs
 *~
+id_rsa_ssjs
+id_rsa_ssjs.pub
+

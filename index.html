@@ -48,15 +48,6 @@
       font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
       text-align: center;
       }
-      p.lead {
-      padding-top: 1.5%;
-      font-size: 24px;
-      line-height: 30px;
-      }
-      p {
-      font-size: 18px;
-      line-height: 24px;
-      }
 
       /* Video pitch and Action */
       .pitch {
@@ -116,8 +107,16 @@
       padding: 40px 20px;
       }
 
-      p.lead {
+      div.support p {
+      font-size: 14px;
+      font-weight: 
+      line-height: 16px;
+      }
+
+      div.support p.lead, p.lead {
       padding-top: 1.5%;
+      font-size: 24px;
+      line-height: 30px;
       }
 
       p {
@@ -193,10 +192,10 @@
 	  <a class="brand" href="#">Blue</a>
 	  <div class="nav-collapse collapse">
             <ul class="nav">
-	      <li class="active"><a href="#">Home</a></li>
-	      <li><a href="#about">About</a></li>
-	      <li><a href="/orders">Orders</a></li>
-	      <li><a href="#contact">Contact</a></li>
+	      <li><a href="/orders">Donors</a></li>
+	      <li>
+		<a href="contact.html">Contact</a>
+	      </li>
             </ul>
 	  </div>
 	</div>
@@ -240,62 +239,32 @@
 	  </p>
         </div>
 
-	<div class="span5 actions">
-          <div class="span9 offset1">
-            <div class="row-fluid statistics">
-	      <div class="span4">
-		<!-- linediv-l and linediv-r give dividing lines that look
-                     different in horizontal and vertical layouts, illustrating
-                     media queries. -->
-		<div class="linediv-l">
-                  <h3>0</h3> <p>backers</p>
-		</div>
-	      </div>
-	      <div class="span4">
-		<div class="linediv-c">
-                  <h3><span class="bitcoin_sym">&#x0E3F;</span>0.0</h3> <p>of <span class="bitcoin_sym">&#x0E3F;</span>1.0</p>
-		</div>
-	      </div>
-	      <div class="span4">
-		<div class="linediv-r">
-                  <h3>60</h3> <p>days left</p>
-		</div>
-	      </div>
-            </div>
-          </div>
+	<div class="span5 box">
 	  <div class="row-fluid">
-          <div class="span10 offset1">
-            <!-- Bootstrap progress bar -->
-            <!-- http://twitter.github.io/bootstrap/components.html#progress -->
-            <div class="thermometer progress active">
-	      <div class="bar bar-success" style="width: 00%;"></div>
-	      <div class="bar bar-warning" style="width: 100%;"></div>
-            </div>
+          <div class="span11 offset1 support">
+	    <p class="lead">Beta Release in November, 2013</p>
+<a class="coinbase-button" data-code="8ff9a3ebbe945a2aa164efd7ee43e4a4" data-button-style="custom_large" href="https://coinbase.com/checkouts/8ff9a3ebbe945a2aa164efd7ee43e4a4">Donate Bitcoins</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
+<p>
+If this idea interests you please considering donating to encourage its development. There will be a free version containing most of the functionality for use by students. Donors will also receive the full version upon request (keep your bitcoin transaction id).
+</p>
+<p>
+Sharing will be greatly appreciated.
+</p>	    
           </div>
 	  </div>
 	  <div class="row-fluid">
-          <div class="span9 offset2 order">
-
-<a class="coinbase-button" data-code="42d7ece0857122d9e6c1126c04478cdc" data-button-style="custom_large" href="https://coinbase.com/checkouts/42d7ece0857122d9e6c1126c04478cdc">Donate Bitcoins</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
-	    
-          </div>
-	  </div>
-	  <div class="row-fluid">
-          <div class="span8 offset2 social">
+          <div class="span11 offset1">
 
 <!-- AddThis Button BEGIN -->
-<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
-<a class="addthis_button_preferred_1"></a>
-<a class="addthis_button_preferred_2"></a>
-<a class="addthis_button_preferred_3"></a>
-<!--<a class="addthis_button_preferred_4"></a> -->
-<a class="addthis_button_compact"></a>
-<!-- <a class="addthis_counter addthis_bubble_style"></a> -->
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style" 
+     style="width:250px;margin-left:0px;">
+<a class="addthis_button_facebook"></a>
+<a class="addthis_button_twitter"></a>
+<a class="addthis_button_compact"></a><a class="addthis_counter addthis_bubble_style"></a>
 </div>
 <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5202e7ee2699302e"></script>
 <!-- AddThis Button END -->
-
           </div>
 	  </div>
 	</div> <!-- actions -->
@@ -314,11 +283,11 @@
 	<div class="span10 offset1">
 	  <h3>FAQ</h3>
 
-	  <div class="accordion" id="accordion3">
+	  <div class="accordion" id="accordion2">
 	    <div class="accordion-group">
 	      <div class="accordion-heading">
 		<a class="accordion-toggle" data-toggle="collapse"
-		   data-parent="#accordion3" href="#collapseOne">
+		   data-parent="#accordion2" href="#collapseOne">
 		  Why is there a need for this app?
 		</a>
 	      </div>
@@ -331,30 +300,13 @@
 	    <div class="accordion-group">
 	      <div class="accordion-heading">
 		<a class="accordion-toggle" data-toggle="collapse"
-		   data-parent="#accordion3" href="#collapseTwo">
+		   data-parent="#accordion2" href="#collapseTwo">
 		  What is the business model?
 		</a>
 	      </div>
 	      <div id="collapseTwo" class="accordion-body collapse">
 		<div class="accordion-inner">
 		  The basic note taking ability, using input styles chosen as best by the developer, is free. The paid app will provide user customizations which cater to experienced users. Other features in the paid version include cloud data storage for easy backup and sharing, and keyword indexing.
-		</div>
-	      </div>
-	    </div>
-	    <div class="accordion-group">
-	      <div class="accordion-heading">
-		<a class="accordion-toggle" data-toggle="collapse"
-		   data-parent="#accordion3" href="#collapseThree">
-		  Will this scale?
-		</a>
-	      </div>
-	      <div id="collapseThree" class="accordion-body collapse">
-		<div class="accordion-inner">
-		  The market for Blue Notes is likely in the range 2%-5% of the number of Papyrus, Lecture Notes, and Handy Notes free downloads, which has been around 1 million over the last two years. Alternatively it can be seen as equal to the number of paid Lecture Notes downloads, which is about 10,000. Lecture Notes charges $4.77 for the paid version. From this Google pays 70% to the developer. The plan is to charge $10 for Blue Notes and reach 10,000 sales in the first two years, for an income of $70,000 to the developer.
-<br/><br/>
-There may be a future direction for Blue Notes in online tutoring. The ability to show your hand-written work to someone else and receive feedback in a structured way is an exciting new area for distance learning.
-
-
 		</div>
 	      </div>
 	    </div>
@@ -367,11 +319,7 @@ There may be a future direction for Blue Notes in online tutoring. The ability t
       <!-- http://creativecommons.org/licenses/ -->
       <div class="row-fluid footer">
 	<div class="span12">
-	  <p>This work is licensed under
-	    the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
-	      By-SA 3.0
-	    </a>, without all the cruft that would otherwise be
-	    put at the bottom of the page.</p>
+	  <p>Mindwave Software 2013</p>
 	</div>
       </div>
     </div>

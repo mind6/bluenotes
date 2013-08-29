@@ -1,0 +1,103 @@
+/*--------------------------------------------------------------------------------
+		MODAL BOX JQUERY BEGIN
+-------------------------------------------------------------------------------------*/
+
+.jquerymodalp{
+	font-size:20px;
+	background: #222;
+	padding: 5px 10px 5px 30px;
+	color: #fff;
+	font-weight: 300;
+	letter-spacing: 1px;
+	border: 3px solid #fff;
+	position: fixed;
+	top: 25%;
+	left: -170px;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	text-transform: uppercase;
+	font-family: 'Open Sans';
+	word-spacing: 3px;
+	text-align: center;
+	outline: 1px solid #222;
+}
+
+.jquerymodalp:after{
+	content:"\f0e0";
+	font-family:'FontAwesome';
+	font-size: 30px;
+	margin-left: 15px;
+}
+
+.jquerymodalp:hover {
+	left:-15px;
+	outline: 1px solid #E85917;
+	text-shadow: 1px 1px #E85917;
+}
+		
+.reveal-modal-bg { 
+	position: fixed; 
+	height: 100%;
+	width: 100%;
+	background: #000;
+	background: rgba(0,0,0,.6); /*---color and transparency of the background of the rest of screen---*/
+	z-index: 100;
+	display: none;
+	top: 0;
+	left: 0; 
+}
+	
+.reveal-modal {
+	visibility: hidden;
+	top: 40px; 
+	left: 20%;
+	margin-left: -300px;
+	min-width: 600px;
+	background: #eee;
+	position: absolute;
+	z-index: 101;
+	padding: 30px 40px 34px;
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,.4);
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,.4);
+	box-shadow: 0 0 10px rgba(0,0,0,.4);
+	display: block;
+}
+	
+.reveal-modal .close-reveal-modal {
+	font-size: 25px;
+	line-height: 1.2;
+	position: absolute;
+	background: #222;
+	border: 1px solid #fff;
+	padding: 0 9px;
+	top: 8px;
+	right: 11px;
+	color: #fff;
+	text-shadow: 0 -1px 1px rbga(0,0,0,.6);
+	font-weight: 100;
+	cursor: pointer;
+	font-family: 'Open Sans';
+} 
+		
+.reveal-modal .close-reveal-modal:hover {
+	border: 1px solid #E85917;
+	color: #E85917;
+}
+		
+#myModal{
+	min-height: 200px;
+	visibility: hidden;  /*---put a / before this line to edit and remove it again before publishing---*/
+	/width: 600px;  /*---remove the / before this line to edit and replace it before publishing---*/
+	/background: #eee; /*---remove the / before this line to edit and replace it before publishing---*/
+	margin: 0 auto;
+	
+}
+
+
+
+/*--------------------------------------------------------------------------------
+		MODAL BOX JQUERY END
+-------------------------------------------------------------------------------------*/
